@@ -156,7 +156,7 @@
 <wire x1="-10.16" y1="-12.7" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-12.7" x2="10.16" y2="10.16" width="0.254" layer="94"/>
 <wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<text x="-3.81" y="11.684" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.318" y="11.176" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-15.494" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="TMUX1208">
@@ -180,11 +180,13 @@
 <wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
 <wire x1="7.62" y1="-15.24" x2="7.62" y2="20.32" width="0.254" layer="94"/>
 <wire x1="7.62" y1="20.32" x2="-7.62" y2="20.32" width="0.254" layer="94"/>
+<text x="-3.81" y="21.59" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.318" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
 <deviceset name="TCA9546A">
-<description>&lt;h1&gt;TCA9546A&lt;/h3&gt;
+<description>&lt;h3&gt;TCA9546A&lt;/h3&gt;
 
 The TCA9546A is a quad 2 bidirectional translating switch controlled via the I C bus. The SCL/SDA upstream pair fans out to four downstream pairs, or channels. Any individual SCn/SDn channel or combination of channels can be selected, determined by the contents of the programmable control register.
 An active-low reset (RESET) input allows the TCA9546A to recover from a situation in which one of the downstream I2C buses is stuck in a low state. Pulling RESET low resets the I2C state machine and causes all the channels to be deselected, as does the internal power-on reset function.
@@ -194,13 +196,13 @@ The pass gates of the switches are constructed such that the VCC pin can be used
 
 Available packages:
 &lt;ul&gt;
-&lt;li&gt; TSSOP16,
-&lt;il&gt; SOIC16</description>
+&lt;li&gt; TSSOP16 &lt;/li&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TCA9546A" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TSSOP16">
+<device name="SO16" package="TSSOP16">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -226,6 +228,15 @@ Available packages:
 </devices>
 </deviceset>
 <deviceset name="TMUX1208">
+<description>&lt;h3&gt; TMUX1208 &lt;/h3&gt;
+
+The TMUX1208 and TMUX1209 are general purpose complementary metal-oxide semiconductor (CMOS) multiplexers (MUX). The TMUX1208 offers 8:1 singleended channels, while the TMUX1209 offers differential 4:1 or dual 4:1 single-ended channels. Wide operating supply of 1.08 V to 5.5 V allows for use in a broad array of applications from personal electronics to building automation applications. The device supports bidirectional analog and digital signals on the source (Sx) and drain (D) pins ranging from GND to VDD. All logic inputs have 1.8 V logic compatible thresholds, ensuring both TTL and CMOS logic compatibility when operating in the valid supply voltage range. Fail-Safe Logic circuitry allows voltages on the control pins to be applied before the supply pin, protecting the device from potential damage.
+ 
+&lt;p&gt;
+Available packages:
+&lt;ul&gt;
+&lt;li&gt; QFN16 &lt;/li&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMUX1208" x="0" y="0"/>
 </gates>
