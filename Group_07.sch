@@ -6178,23 +6178,23 @@ This library contains symbols and footprints for the CY8CKIT-059 prototyping kit
 <wire x1="-2.2" y1="-2.5" x2="2.2" y2="-2.5" width="0.127" layer="21"/>
 </package>
 <package name="QFN16">
-<smd name="12" x="0.8" y="0.6" dx="0.7" dy="0.2" layer="1"/>
-<smd name="1" x="-0.8" y="0.6" dx="0.7" dy="0.2" layer="1"/>
-<smd name="2" x="-0.8" y="0.2" dx="0.7" dy="0.2" layer="1"/>
-<smd name="11" x="0.8" y="0.2" dx="0.7" dy="0.2" layer="1"/>
-<smd name="3" x="-0.8" y="-0.2" dx="0.7" dy="0.2" layer="1"/>
-<smd name="10" x="0.8" y="-0.2" dx="0.7" dy="0.2" layer="1"/>
-<smd name="4" x="-0.8" y="-0.6" dx="0.7" dy="0.2" layer="1"/>
-<smd name="9" x="0.8" y="-0.6" dx="0.7" dy="0.2" layer="1"/>
-<smd name="16" x="-0.6" y="1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="15" x="-0.2" y="1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="14" x="0.2" y="1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="13" x="0.6" y="1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="8" x="0.6" y="-1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="7" x="0.2" y="-1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="6" x="-0.2" y="-1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<smd name="5" x="-0.6" y="-1.2" dx="0.7" dy="0.2" layer="1" rot="R90"/>
-<circle x="-1.397" y="1.016" radius="0.25" width="0" layer="21"/>
+<smd name="12" x="0.8" y="0.6" dx="0.6" dy="0.2" layer="1"/>
+<smd name="1" x="-0.75" y="0.6" dx="0.7" dy="0.2" layer="1"/>
+<smd name="2" x="-0.8" y="0.2" dx="0.6" dy="0.2" layer="1"/>
+<smd name="11" x="0.8" y="0.2" dx="0.6" dy="0.2" layer="1"/>
+<smd name="3" x="-0.8" y="-0.2" dx="0.6" dy="0.2" layer="1"/>
+<smd name="10" x="0.8" y="-0.2" dx="0.6" dy="0.2" layer="1"/>
+<smd name="4" x="-0.8" y="-0.6" dx="0.6" dy="0.2" layer="1"/>
+<smd name="9" x="0.8" y="-0.6" dx="0.6" dy="0.2" layer="1"/>
+<smd name="16" x="-0.6" y="1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="15" x="-0.2" y="1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="14" x="0.2" y="1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="13" x="0.6" y="1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="8" x="0.6" y="-1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="7" x="0.2" y="-1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="6" x="-0.2" y="-1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<smd name="5" x="-0.6" y="-1.2" dx="0.6" dy="0.2" layer="1" rot="R90"/>
+<circle x="-1.216" y="0.903" radius="0.2" width="0" layer="21"/>
 <text x="-0.635" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.508" y="-2.286" size="0.4064" layer="27">&gt;VALUE</text>
 <wire x1="0.9" y1="1.3" x2="0.9" y2="-1.3" width="0.127" layer="51"/>
@@ -6302,6 +6302,15 @@ Available packages:
 </devices>
 </deviceset>
 <deviceset name="TMUX1208">
+<description>&lt;h3&gt; TMUX1208 &lt;/h3&gt;
+
+The TMUX1208 and TMUX1209 are general purpose complementary metal-oxide semiconductor (CMOS) multiplexers (MUX). The TMUX1208 offers 8:1 singleended channels, while the TMUX1209 offers differential 4:1 or dual 4:1 single-ended channels. Wide operating supply of 1.08 V to 5.5 V allows for use in a broad array of applications from personal electronics to building automation applications. The device supports bidirectional analog and digital signals on the source (Sx) and drain (D) pins ranging from GND to VDD. All logic inputs have 1.8 V logic compatible thresholds, ensuring both TTL and CMOS logic compatibility when operating in the valid supply voltage range. Fail-Safe Logic circuitry allows voltages on the control pins to be applied before the supply pin, protecting the device from potential damage.
+ 
+&lt;p&gt;
+Available packages:
+&lt;ul&gt;
+&lt;li&gt; QFN16 &lt;/li&gt;
+&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMUX1208" x="0" y="0"/>
 </gates>
@@ -6621,7 +6630,7 @@ Sensor</text>
 </instance>
 <instance part="U4" gate="G$1" x="50.8" y="35.56" smashed="yes">
 <attribute name="NAME" x="46.99" y="57.15" size="1.778" layer="95"/>
-<attribute name="VALUE" x="44.958" y="17.78" size="1.778" layer="96"/>
+<attribute name="VALUE" x="46.482" y="17.78" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
