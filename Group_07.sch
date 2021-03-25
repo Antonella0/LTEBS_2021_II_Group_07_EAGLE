@@ -6476,13 +6476,13 @@ Sensor</text>
 <attribute name="NAME" x="59.944" y="160.401" size="1.778" layer="95" font="vector"/>
 <attribute name="VALUE" x="59.944" y="155.321" size="1.778" layer="96" font="vector"/>
 </instance>
-<instance part="C1" gate="G$1" x="86.36" y="157.48" smashed="yes">
-<attribute name="NAME" x="87.884" y="160.401" size="1.778" layer="95" font="vector"/>
-<attribute name="VALUE" x="87.884" y="155.321" size="1.778" layer="96" font="vector"/>
+<instance part="C1" gate="G$1" x="86.36" y="157.226" smashed="yes">
+<attribute name="NAME" x="87.884" y="160.147" size="1.778" layer="95" font="vector"/>
+<attribute name="VALUE" x="87.884" y="155.067" size="1.778" layer="96" font="vector"/>
 </instance>
 <instance part="U1" gate="G$1" x="73.66" y="162.56" smashed="yes">
 <attribute name="NAME" x="72.39" y="165.862" size="1.778" layer="95"/>
-<attribute name="VALUE" x="76.2" y="152.4" size="1.778" layer="96"/>
+<attribute name="VALUE" x="71.374" y="155.194" size="1.778" layer="96"/>
 </instance>
 <instance part="J7" gate="G$1" x="121.92" y="157.48" smashed="yes">
 <attribute name="VALUE" x="119.38" y="152.654" size="1.778" layer="96" font="vector"/>
@@ -6647,14 +6647,6 @@ Sensor</text>
 <nets>
 <net name="5V" class="0">
 <segment>
-<pinref part="SUPPLY4" gate="G$1" pin="5V"/>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="170.18" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
-<wire x1="81.28" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
-<junction x="86.36" y="162.56"/>
-</segment>
-<segment>
 <pinref part="J7" gate="G$1" pin="2"/>
 <pinref part="SUPPLY1" gate="G$1" pin="5V"/>
 <wire x1="129.54" y1="160.02" x2="139.7" y2="160.02" width="0.1524" layer="91"/>
@@ -6727,6 +6719,17 @@ Sensor</text>
 <pinref part="SUPPLY9" gate="G$1" pin="5V"/>
 <pinref part="U4" gate="G$1" pin="VDD"/>
 </segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="OUT"/>
+<wire x1="81.28" y1="162.56" x2="84.328" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="84.328" y1="162.56" x2="84.328" y2="162.814" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="1"/>
+<wire x1="84.328" y1="162.814" x2="86.36" y2="162.814" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="162.814" x2="86.36" y2="162.306" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="G$1" pin="5V"/>
+<wire x1="86.36" y1="162.306" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
+<junction x="86.36" y="162.306"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -6754,7 +6757,7 @@ Sensor</text>
 <junction x="58.42" y="152.4"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="73.66" y1="152.4" x2="86.36" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="152.4" x2="86.36" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="152.4" x2="86.36" y2="154.686" width="0.1524" layer="91"/>
 <junction x="73.66" y="152.4"/>
 </segment>
 <segment>
