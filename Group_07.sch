@@ -6721,11 +6721,9 @@ Sensor</text>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
-<wire x1="81.28" y1="162.56" x2="84.328" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="84.328" y1="162.56" x2="84.328" y2="162.814" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="162.56" x2="86.36" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="84.328" y1="162.814" x2="86.36" y2="162.814" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="162.814" x2="86.36" y2="162.306" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="162.56" x2="86.36" y2="162.306" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="5V"/>
 <wire x1="86.36" y1="162.306" x2="86.36" y2="170.18" width="0.1524" layer="91"/>
 <junction x="86.36" y="162.306"/>
