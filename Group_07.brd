@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
@@ -191,9 +191,9 @@
 <wire x1="62.23" y1="72.39" x2="62.23" y2="0" width="0.254" layer="20"/>
 <wire x1="0" y1="0" x2="62.23" y2="0" width="0.254" layer="20"/>
 <dimension x1="0" y1="0" x2="62.23" y2="0" x3="31.115" y3="-5.08" textsize="1.778" layer="51"/>
-<hole x="2.54" y="2.54" drill="2.5"/>
-<hole x="59.69" y="2.54" drill="2.5"/>
-<hole x="2.54" y="69.85" drill="2.5"/>
+<hole x="2.54" y="2.54" drill="2.6"/>
+<hole x="59.69" y="2.54" drill="2.6"/>
+<hole x="2.54" y="69.85" drill="2.6"/>
 <wire x1="54.475" y1="8.961" x2="54.475" y2="5.513" width="0.1016" layer="21"/>
 <wire x1="54.475" y1="5.513" x2="56.145" y2="5.513" width="0.1016" layer="21"/>
 <wire x1="56.145" y1="5.513" x2="56.145" y2="8.961" width="0.1016" layer="21"/>
@@ -259,7 +259,7 @@
 <text x="13.06" y="31.98" size="0.5" layer="21" font="vector" ratio="15" rot="R90">TEMPERATURE SENSOR</text>
 <dimension x1="62.23" y1="72.39" x2="62.23" y2="0" x3="67.31" y3="36.195" textsize="1.778" layer="51" dtype="vertical"/>
 <text x="5.68" y="2.12" size="1.524" layer="21">GROUP_07</text>
-<hole x="59.69" y="69.85" drill="2.5"/>
+<hole x="59.69" y="69.85" drill="2.6"/>
 </plain>
 <libraries>
 <library name="SparkFun-Capacitors">
