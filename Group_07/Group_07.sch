@@ -6830,7 +6830,7 @@ Sensor</text>
 <wire x1="22.86" y1="106.68" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="106.68" x2="35.56" y2="106.68" width="0.1524" layer="91"/>
 <junction x="22.86" y="106.68"/>
-<label x="35.56" y="106.68" size="1.778" layer="95" xref="yes"/>
+<label x="35.56" y="106.68" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="154.94" y1="50.8" x2="154.94" y2="38.1" width="0.1524" layer="91"/>
@@ -6896,7 +6896,7 @@ Sensor</text>
 <segment>
 <pinref part="U2" gate="G$1" pin="VOUT"/>
 <wire x1="86.36" y1="124.46" x2="88.9" y2="124.46" width="0.1524" layer="91"/>
-<label x="88.9" y="124.46" size="1.778" layer="95" xref="yes"/>
+<label x="88.9" y="124.46" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="I2C_SCL_0" class="0">

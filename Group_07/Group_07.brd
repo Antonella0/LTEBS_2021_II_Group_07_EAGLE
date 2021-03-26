@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -241,8 +241,8 @@
 <text x="6.731" y="33.782" size="0.5" layer="21" font="vector" ratio="15" rot="R90">PHOTOCELLPTH</text>
 <text x="14.859" y="50.927" size="0.5" layer="21" font="vector" ratio="15" rot="R90">BLUE LED</text>
 <text x="13.303" y="47.227" size="0.5" layer="21" font="vector" ratio="15" rot="R90">10k</text>
-<text x="11.049" y="45.593" size="0.5" layer="21" font="vector" ratio="15" rot="R90">330</text>
-<text x="9.294" y="54.027" size="0.5" layer="21" font="vector" ratio="15" rot="R90">0.33µF</text>
+<text x="10.449" y="47.893" size="0.5" layer="21" font="vector" ratio="15" rot="R90">330</text>
+<text x="9.194" y="53.977" size="0.5" layer="21" font="vector" ratio="15" rot="R90">0.33µF</text>
 <wire x1="9.574" y1="54.116" x2="12.868" y2="54.116" width="0.1016" layer="21"/>
 <wire x1="12.868" y1="54.116" x2="12.868" y2="55.84" width="0.1016" layer="21"/>
 <wire x1="12.868" y1="55.84" x2="9.574" y2="55.84" width="0.1016" layer="21"/>
@@ -256,7 +256,7 @@
 <text x="1.15" y="58.46" size="0.5" layer="21" font="vector" ratio="15" rot="R90">ON</text>
 <text x="1.05" y="63.71" size="0.5" layer="21" font="vector" ratio="15" rot="R90">OFF</text>
 <text x="11.45" y="67.61" size="0.5" layer="21" font="vector" ratio="15">POWER</text>
-<text x="13.06" y="31.98" size="0.5" layer="21" font="vector" ratio="15" rot="R90">TEMPERATURE SENSOR</text>
+<text x="13.41" y="31.98" size="0.5" layer="21" font="vector" ratio="15" rot="R90">TEMPERATURE SENSOR</text>
 <dimension x1="62.23" y1="72.39" x2="62.23" y2="0" x3="67.31" y3="36.195" textsize="1.778" layer="51" dtype="vertical"/>
 <text x="5.68" y="2.12" size="1.524" layer="21">GROUP_07</text>
 <hole x="59.69" y="69.85" drill="2.6"/>
@@ -923,10 +923,14 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </class>
 </classes>
 <designrules name="Group_07">
-<description language="en">&lt;b&gt;MD S.R.L. Design Rules&lt;/b&gt;
+<description language="en">
+&lt;h3&gt; &lt;b&gt;MD S.R.L. Design Rules&lt;/b&gt; &lt;/h3&gt;
+
 &lt;p&gt;
 Design rules taken from the technical info available on the prodcuer website:
-https://www.mdsrl.it/mddesignrules.html</description>
+https://www.mdsrl.it/mddesignrules.html
+&lt;/p&gt;
+</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.48mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
@@ -941,12 +945,12 @@ https://www.mdsrl.it/mddesignrules.html</description>
 <param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="6mil"/>
-<param name="mdDrill" value="22mil"/>
+<param name="mdCopperDimension" value="8mil"/>
+<param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
 <param name="msWidth" value="6mil"/>
 <param name="msDrill" value="8mil"/>
-<param name="msMicroVia" value="6mil"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -955,19 +959,19 @@ https://www.mdsrl.it/mddesignrules.html</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="10mil"/>
+<param name="rlMinPadTop" value="8mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMinPadInner" value="8mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="10mil"/>
+<param name="rlMinPadBottom" value="8mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="8mil"/>
+<param name="rlMinViaOuter" value="6mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="8mil"/>
+<param name="rlMinViaInner" value="6mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
-<param name="rlMinMicroViaOuter" value="6mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
-<param name="rlMinMicroViaInner" value="6mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
@@ -977,14 +981,14 @@ https://www.mdsrl.it/mddesignrules.html</description>
 <param name="mvStopFrame" value="0.25"/>
 <param name="mvCreamFrame" value="0"/>
 <param name="mlMinStopFrame" value="8mil"/>
-<param name="mlMaxStopFrame" value="10mil"/>
+<param name="mlMaxStopFrame" value="8mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
-<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalIsolate" value="8mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
